@@ -1,5 +1,13 @@
-public class Main {
+import java.util.Scanner;
+public class DevTest {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Scanner in = new Scanner(System.in);
+//
+//
+//        SafeInput.getZeroLengthString (in,"Please type anything in: ");
+
+        SafeInput.getRegExString(in, "Please input a string: ","[a-z,A-Z]+@");
     }
+
 }
+
